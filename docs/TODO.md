@@ -10,7 +10,7 @@
 
 * Implement cache with Redis and queue with RabbitMQ, and check operation: **2 days**
 
-* Create all resources in AWS, organize accesses, for staging and production: **8 days** \
+* Create all resources in AWS, organizes the network and access, for staging and production: **8 days** \
 *Learn more about AWS infrastructure in the general documentation, in the `Architecture Overview` section.*
 
 * Create Kubernetes manifests, and check operation with AWS: **2 days**

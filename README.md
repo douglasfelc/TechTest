@@ -25,14 +25,14 @@ This microservice also connects with other services:
 
 ### Dockerfile
 
-* Image base: node:20.16-alpine3.19
+* Image base: node:20.16-alpine3.19 \
 This image was chosen because it is the most current LTS (long-term support) version, and uses Alpine Linux, a lightweight and high-performance version.
 
 The steps will be:
 
 * Define the WORKDIR
 * Copy package*.json to the container
-* Install the dependencies,
+* Install the dependencies
 * Copy the remaining files
 * Run the build (when it is a production Dockerfile)
 * Expose a port
@@ -188,7 +188,7 @@ For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&
 * **NestJS**: was chosen because it is a robust and scalable framework, built on top of Node.js, that makes it easy to create server-side applications with a modular and clean architecture. Its native integration with TypeScript, support for the dependency injection pattern, and a large community make NestJS an excellent choice for building complex APIs and microservices.
 * **class-validator + class-transformer**: were chosen mainly because of their integration with NestJS. They facilitate the validation and transformation of data at runtime, providing an efficient way to ensure that the received data meets the expected requirements before being processed. The native integration with NestJS allows for simple and robust validation configuration in routes.
 * **Jest + SuperTest**: were chosen because of their direct integration with NestJS, which makes it easy to create unit and integration tests. Jest is a natural choice for TypeScript unit testing, while SuperTest allows you to create end-to-end tests that simulate HTTP requests, ensuring that APIs are working properly.
-* **Prometheus & Grafana**: were chosen to monitor application performance, identify bottlenecks, and track service health
+* **Prometheus & Grafana**: were chosen to monitor application performance, identify bottlenecks, and track service health.
 * **Sentry**: was chosen for its ease of implementation and its ability to capture detailed stack traces, facilitating the debugging process and ensuring that critical issues are addressed before they impact end users.
 * **Redis**: was chosen to handle caching because of its ability to store temporary data with fast access, which is ideal for improving the performance of operations that require frequent data queries.
 * **RabbitMQ**: was chosen as the queuing system because it supports multiple forms of routing and message management, ensuring that data is delivered securely and in the correct order, even in distributed systems.
@@ -205,4 +205,4 @@ For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&
 
 ### Stay in touch
 
-- Author - [Douglas Felchilcher](https://www.linkedin.com/in/douglasfelc/)
+- Author - [Douglas Felchilcher](https://www.linkedin.com/in/douglasfelc/) (external link)
