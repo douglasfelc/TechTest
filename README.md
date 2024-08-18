@@ -12,6 +12,7 @@ The following technologies were used for development:
 * Integration Testing: Jest + SuperTest
 * Monitoring: Prometheus & Grafana
 * Tracing: Sentry
+* Documentation: OpenAPI (Swagger)
 
 This microservice also connects with other services:
 * Cache service: Redis
@@ -188,6 +189,7 @@ For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&
 * **Socket.io**: was chosen to enable real-time, bidirectional communication between clients and servers. It abstracts the complexity of WebSocket and ensures compatibility with all browsers, in addition to providing fallback mechanisms in case of WebSocket connection failures.
 * **PostgreSQL (with TypeORM)**: was chosen as the main database to store user posts due to its robustness, support for transactions, and compliance with the SQL standard. It is a highly scalable and reliable relational database, ideal for storing structured data and performing complex queries. TypeORM was selected to facilitate object-relational mapping (ORM), allowing to work with the database in a more intuitive and typed way in NestJS.
 * **MongoDB (with Mongoose)**: was chosen to store audits due to its flexibility with unstructured data and horizontal scalability.
+* **OpenAPI (Swagger)**: was chosen because it is integrated with Nest.js via OpenAPI, and automatically generates API documentation from the controllers and decorators defined in the code. This eliminates the need to manually write documentation, ensuring that it is always up to date and aligned with changes in the code.
 
 
 # TODO list
