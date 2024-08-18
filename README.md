@@ -151,9 +151,9 @@ These are for deploy:
 
 ### CI/CD: Task Delivery Flow
 
-For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=v5X4ZSBKwLfaPkUQKjhO#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (acesso externo)
+For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=v5X4ZSBKwLfaPkUQKjhO#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (external link)
 
-![If the diagram does not load, go to https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=v5X4ZSBKwLfaPkUQKjhO#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload](./docs/diagrams/CI_CD.svg)
+![If this diagram did not load, please follow the link above.](./docs/diagrams/CI_CD.svg)
 
 
 # Architecture Overview
@@ -162,19 +162,25 @@ For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&
 
 #### Infrastructure diagram
 
-For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (acesso externo)
+You have two groups in EKS. \
+The Fixed Group is the group that scales vertically. \
+The Auto Scaling Group is the group that scales horizontally.
+
+For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (external link)
+
+![If this diagram did not load, please follow the link above.](./docs/diagrams/Infrastructure.svg)
 
 #### Diagram of how this microservice works.
 
-For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=s0kt4Jnu0GX9cwu7lj_r#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload)
+For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=s0kt4Jnu0GX9cwu7lj_r#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (external link)
 
-![If the diagram does not load, go to https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=s0kt4Jnu0GX9cwu7lj_r#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload](./docs/diagrams/UsageFlow.svg)
+![If this diagram did not load, please follow the link above.](./docs/diagrams/UsageFlow.svg)
 
 #### REST API Behavior Diagram
 
-For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=qd33mnqiCQqoM4UgHgPT#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload)
+For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=qd33mnqiCQqoM4UgHgPT#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (external link)
 
-![If the diagram does not load, go to https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=qd33mnqiCQqoM4UgHgPT#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload](./docs/diagrams/Api.svg)
+![If this diagram did not load, please follow the link above.](./docs/diagrams/Api.svg)
 
 ### Justification of choices
 
