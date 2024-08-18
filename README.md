@@ -159,17 +159,17 @@ For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&
 
 ### Diagrams
 
-* Infrastructure diagram
+#### Infrastructure diagram
 
 For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload) (acesso externo)
 
-* Diagram of how this microservice works.
+#### Diagram of how this microservice works.
 
 For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=s0kt4Jnu0GX9cwu7lj_r#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload)
 
 ![If the diagram does not load, go to https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=s0kt4Jnu0GX9cwu7lj_r#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload](./docs/diagrams/UsageFlow.svg)
 
-* REST API Behavior Diagram
+#### REST API Behavior Diagram
 
 For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TechTest.drawio&page-id=qd33mnqiCQqoM4UgHgPT#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1ptHPn7DArZM16_XKKtGamrwrpVmez-0n%26export%3Ddownload)
 
@@ -177,19 +177,17 @@ For better visualization, [click here](https://viewer.diagrams.net/?tags=%7B%7D&
 
 ### Justification of choices
 
-* Node.js: was chosen because it is performant, secure, and easy to maintain.
-* NestJS: was chosen because it is a robust and scalable framework, built on top of Node.js, that makes it easy to create server-side applications with a modular and clean architecture. Its native integration with TypeScript, support for the dependency injection pattern, and a large community make NestJS an excellent choice for building complex APIs and microservices.
-* class-validator + class-transformer: were chosen mainly because of their integration with NestJS. They facilitate the validation and transformation of data at runtime, providing an efficient way to ensure that the received data meets the expected requirements before being processed. The native integration with NestJS allows for simple and robust validation configuration in routes.
-* Jest + SuperTest: were chosen because of their direct integration with NestJS, which makes it easy to create unit and integration tests. Jest is a natural choice for TypeScript unit testing, while SuperTest allows you to create end-to-end tests that simulate HTTP requests, ensuring that APIs are working properly.
-* Prometheus & Grafana: were chosen to monitor application performance, identify bottlenecks, and track service health
-* Sentry: was chosen for its ease of implementation and its ability to capture detailed stack traces, facilitating the debugging process and ensuring that critical issues are addressed before they impact end users.
-* Redis: was chosen to handle caching because of its ability to store temporary data with fast access, which is ideal for improving the performance of operations that require frequent data queries.
-* RabbitMQ: was chosen as the queuing system because it supports multiple forms of routing and message management, ensuring that data is delivered securely and in the correct order, even in distributed systems.
-* Socket.io: was chosen to enable real-time, bidirectional communication between clients and servers. It abstracts the complexity of WebSocket and ensures compatibility with all browsers, in addition to providing fallback mechanisms in case of WebSocket connection failures.
-* PostgreSQL (with TypeORM): was chosen as the main database to store user posts due to its robustness, support for transactions, and compliance with the SQL standard. It is a highly scalable and reliable relational database, ideal for storing structured data and performing complex queries. TypeORM was selected to facilitate object-relational mapping (ORM), allowing to work with the database in a more intuitive and typed way in NestJS.
-* MongoDB (with Mongoose): was chosen to store audits due to its flexibility with unstructured data and horizontal scalability.
-
-https://app.diagrams.net/#G1ptHPn7DArZM16_XKKtGamrwrpVmez-0n#%7B%22pageId%22%3A%22s0kt4Jnu0GX9cwu7lj_r%22%7D
+* **Node.js**: was chosen because it is performant, secure, and easy to maintain.
+* **NestJS**: was chosen because it is a robust and scalable framework, built on top of Node.js, that makes it easy to create server-side applications with a modular and clean architecture. Its native integration with TypeScript, support for the dependency injection pattern, and a large community make NestJS an excellent choice for building complex APIs and microservices.
+* **class-validator + class-transformer**: were chosen mainly because of their integration with NestJS. They facilitate the validation and transformation of data at runtime, providing an efficient way to ensure that the received data meets the expected requirements before being processed. The native integration with NestJS allows for simple and robust validation configuration in routes.
+* **Jest + SuperTest**: were chosen because of their direct integration with NestJS, which makes it easy to create unit and integration tests. Jest is a natural choice for TypeScript unit testing, while SuperTest allows you to create end-to-end tests that simulate HTTP requests, ensuring that APIs are working properly.
+* **Prometheus & Grafana**: were chosen to monitor application performance, identify bottlenecks, and track service health
+* **Sentry**: was chosen for its ease of implementation and its ability to capture detailed stack traces, facilitating the debugging process and ensuring that critical issues are addressed before they impact end users.
+* **Redis**: was chosen to handle caching because of its ability to store temporary data with fast access, which is ideal for improving the performance of operations that require frequent data queries.
+* **RabbitMQ**: was chosen as the queuing system because it supports multiple forms of routing and message management, ensuring that data is delivered securely and in the correct order, even in distributed systems.
+* **Socket.io**: was chosen to enable real-time, bidirectional communication between clients and servers. It abstracts the complexity of WebSocket and ensures compatibility with all browsers, in addition to providing fallback mechanisms in case of WebSocket connection failures.
+* **PostgreSQL (with TypeORM)**: was chosen as the main database to store user posts due to its robustness, support for transactions, and compliance with the SQL standard. It is a highly scalable and reliable relational database, ideal for storing structured data and performing complex queries. TypeORM was selected to facilitate object-relational mapping (ORM), allowing to work with the database in a more intuitive and typed way in NestJS.
+* **MongoDB (with Mongoose)**: was chosen to store audits due to its flexibility with unstructured data and horizontal scalability.
 
 
 # TODO list
