@@ -72,3 +72,20 @@ spec:
         type: Utilization
         averageUtilization: 30
 ```
+
+service.yaml
+
+```bash
+apiVersion: v1
+kind: Service
+metadata:
+  name: posts-service
+spec:
+  selector:
+    app: posts-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer
+```
