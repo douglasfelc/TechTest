@@ -21,7 +21,7 @@ kind: Deployment
 metadata:
   name: posts-service
 spec:
-  replicas: 3
+  replicas: 10
   selector:
     matchLabels:
       app: posts-service
@@ -31,8 +31,44 @@ spec:
         app: posts-service
     spec:
       containers:
-      - name: posts-service
+      - name: posts-service-container
         image: techtest/posts-service:v1
         ports:
         - containerPort: 3000
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+```
+
+hpa.yaml
+
+```bash
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: posts-service-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: posts-service
+  minReplicas: 10
+  maxReplicas: 50
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 20
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 30
 ```
